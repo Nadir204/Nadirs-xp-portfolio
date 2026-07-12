@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>XP Portfolio — Desktop</title>
+<meta name="description" content="A Windows XP-inspired interactive developer portfolio desktop." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ======================= BOOT SCREEN ======================= -->
+<div id="boot">
+  <div class="boot-logo">
+    <div class="flagbig" id="bootFlag"></div>
+    <div class="brand"><b>myXP</b> <span style="font-weight:300">Portfolio Edition</span></div>
+    <div class="sub">Original Windows XP-inspired build • not affiliated with Microsoft</div>
+  </div>
+  <div class="boot-bar"><div class="boot-blocks"><i></i><i></i><i></i></div></div>
+  <div class="boot-copy">Loading your desktop…</div>
+</div>
+
+<!-- ======================= LOGIN SCREEN ======================= -->
+<div id="login">
+  <div class="login-top"></div>
+  <div class="login-mid">
+    <div class="login-left">
+      <div class="brand">To begin, click your user name<b>Welcome</b></div>
+      <div class="hint">This is a portfolio experience </div>
+    </div>
+    <div class="login-right">
+      <div class="user-tile sel" id="userTile">
+        <div class="user-pic" id="loginPic"></div>
+        <div>
+          <div class="un" id="loginName">Your Name</div>
+          <div class="lg">click to log in</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="login-bot">
+    <span>🔌 Click your name to start</span>
+    <span id="loginRole">Developer Portfolio</span>
+  </div>
+</div>
+
+<!-- ======================= DESKTOP ======================= -->
+<div id="desktop">
+  <div class="icons" id="iconGrid"></div>
+  <div id="rubber"></div>
+</div>
+
+<!-- ======================= TASKBAR ======================= -->
+<div id="taskbar">
+  <div id="startbtn"><span class="flag" id="startFlag"></span>start</div>
+  <div id="tasks"></div>
+  <div id="tray">
+    <span class="tray-ico" id="trayVol" title="Volume">🔊</span>
+    <span class="tray-ico" title="Network">📶</span>
+    <span class="tray-ico" id="trayShield" title="Security">🛡️</span>
+    <div id="clock">--:--<br><span style="opacity:.85">--/--/--</span></div>
+  </div>
+</div>
+
+<!-- ======================= START MENU ======================= -->
+<div id="startmenu">
+  <div class="sm-head">
+    <div class="sm-avatar" id="smAvatar"></div>
+    <span id="smName">Your Name</span>
+  </div>
+  <div class="sm-search">
+    <input id="smSearch" placeholder="🔍  Search programs and files" autocomplete="off"/>
+  </div>
+  <div class="sm-cols">
+    <div class="sm-left" id="smLeft"></div>
+    <div class="sm-right" id="smRight"></div>
+  </div>
+  <div class="sm-foot">
+    <div class="fbtn" id="logoffBtn"><span class="fico" style="background:linear-gradient(#f2b34a,#d98a1a)">⎋</span>Log Off</div>
+    <div class="fbtn" id="shutdownBtn"><span class="fico" style="background:linear-gradient(#f28a6b,#d13b1a)">⏻</span>Turn Off</div>
+  </div>
+</div>
+
+<!-- ======================= FLOATING LAYERS ======================= -->
+<div id="ctx"></div>
+<div id="modal-layer"></div>
+<div id="hintbubble"><span class="x" onclick="document.getElementById('hintbubble').style.display='none'">×</span>
+  <b>Tip:</b> Double-click desktop icons to open apps. Try the <b>Command Prompt</b> and type <b>help</b>. Right-click the desktop for a menu. Press the Konami code for a surprise. ↑↑↓↓←→←→ B A</div>
+
+<!-- ======================= BSOD ======================= -->
+<div id="bsod">
+  <p>A problem has been detected and your portfolio has been shut down to prevent damage to your nostalgia.</p>
+  <p>PORTFOLIO_TOO_AWESOME</p>
+  <p>If this is the first time you've seen this screen, relax — it's an easter egg.</p>
+  <p>Technical information:</p>
+  <p>*** STOP: 0x0000C0DE (0xBADCAFE, 0xDEADBEEF, 0x1337, 0x0)</p>
+  <p style="margin-top:30px">Press any key or click to continue . . .</p>
+</div>
+
+
+<!-- ================= SCRIPTS =================
+     Plain (non-module) scripts, loaded in dependency order and kept at
+     the end of <body> exactly like the original inline script. They all
+     share one global scope, so the code runs identically to before.
+     Edit your details first in js/cfg.js. -->
+<script src="js/cfg.js"></script>
+<script src="js/core/c3.js"></script>
+<script src="js/core/c1.js"></script>
+<script src="js/core/c2.js"></script>
+<script src="js/system/s4.js"></script>
+<script src="js/system/s3.js"></script>
+<script src="js/system/s1.js"></script>
+<script src="js/system/s2.js"></script>
+<script src="js/system/s5.js"></script>
+<!-- _apps.js changes to apps.js------------------------------- -->
+<script src="js/apps/a0.js"></script>
+<!-- added for tictactoe---------- -->
+<script src="js/apps/a21.js"></script>
+<!-- added for number guessing game -->
+<script src="js/apps/a12.js"></script>
+<script src="js/apps/a1.js"></script>
+<script src="js/apps/a19.js"></script>
+<script src="js/apps/a15.js"></script>
+<script src="js/apps/a4.js"></script>
+<script src="js/apps/a11.js"></script>
+<script src="js/apps/a2.js"></script>
+<script src="js/apps/a20.js"></script>
+<script src="js/apps/a13.js"></script>
+<script src="js/apps/a17.js"></script>
+<script src="js/apps/a3.js"></script>
+<script src="js/apps/a10.js"></script>
+<script src="js/apps/a6.js"></script>
+<script src="js/apps/a8.js"></script>
+<script src="js/apps/a16.js"></script>
+<script src="js/apps/a9.js"></script>
+<script src="js/apps/a18.js"></script>
+<script src="js/apps/a7.js"></script>
+<script src="js/apps/a5.js"></script>
+<script src="js/features/f5.js"></script>
+<script src="js/features/f1.js"></script>
+<script src="js/features/f2.js"></script>
+<script src="js/features/f7.js"></script>
+<script src="js/features/f6.js"></script>
+<script src="js/features/f3.js"></script>
+<script src="js/features/f8.js"></script>
+<script src="js/features/f4.js"></script>
+<script src="js/xp_init.js"></script>
+<script src="js/apps/a14.js"></script>
+<script src="js/mf.js"></script>
+</body>
+</html>
